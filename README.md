@@ -7,15 +7,15 @@ test various mlx versions with test cases, choose most appropriate version for o
 4. compile and test.
 
 - unzip .tgz command
-tar -xvf (filename).tgz
+tar -xvf filename.tgz
 
 How to compile dylib
 1. make dylib.
-2. move (filename).dylib in your root directory.
+2. move filename.dylib in your root directory.
 3. compile with flag.
 
 - compile flag
 gcc -I. -L. -lmlx -framwork Metal -framwork MetalKit
 
--L(dir) = directory which your .dylib locate.
--l(lib) = name of your library.
+-Ldir = directory which your .dylib locate.
+-llib = name of your library.
