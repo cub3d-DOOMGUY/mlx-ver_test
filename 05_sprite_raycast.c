@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   05_sprite_raycast.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hakang <hakang@student.42.fr>              +#+  +:+       +#+        */
+/*   By: incho <incho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 20:28:54 by yohlee            #+#    #+#             */
-/*   Updated: 2020/07/27 13:57:18 by hakang           ###   ########.fr       */
+/*   Updated: 2022/04/16 13:39:13 by incho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,7 @@ typedef struct		s_pair
 
 void	key_update(t_info *info);
 
+/*
 static int	compare(const void *first, const void *second)
 {
 	if (*(int *)first > *(int *)second)
@@ -117,6 +118,7 @@ static int	compare(const void *first, const void *second)
 	else
 		return (0);
 }
+*/
 
 void	sort_order(t_pair *orders, int amount)
 {

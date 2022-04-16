@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   02_textured_raycast.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yohlee <yohlee@student.42seoul.kr>         +#+  +:+       +#+        */
+/*   By: incho <incho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 15:18:03 by yohlee            #+#    #+#             */
-/*   Updated: 2020/07/21 08:09:54 by yohlee           ###   ########.fr       */
+/*   Updated: 2022/04/16 13:26:03 by incho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../mlx/mlx.h"
+#include "mlx/mlx.h"
 #include "key_macos.h"
 #include <math.h>
 #include <string.h>

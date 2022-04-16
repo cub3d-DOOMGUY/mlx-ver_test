@@ -6,7 +6,7 @@
 #    By: incho <incho@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/01 08:18:34 by incho             #+#    #+#              #
-#    Updated: 2022/04/16 12:12:50 by incho            ###   ########.fr        #
+#    Updated: 2022/04/16 13:38:42 by incho            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ WHITE		= \033[1;37m
 # Mandatory source files
 # ----------------------------------
 
-SRCS		=	01_untextured_raycast.c
+SRCS		=	05_sprite_raycast.c
 
 # ----------------------------------
 # Object files
