@@ -6,7 +6,7 @@
 /*   By: incho <incho@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 20:28:54 by yohlee            #+#    #+#             */
-/*   Updated: 2022/04/16 13:39:13 by incho            ###   ########.fr       */
+/*   Updated: 2022/04/19 13:47:51 by incho            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,6 +161,9 @@ void	sortSprites(int *order, double *dist, int amount)
 	}
 	free(sprites);
 }
+
+//int worldMap[mapWidth][mapHeight] = {{1, 1, 1}, {1, 0, 1}, {1, 1, 1}};
+
 
 int	worldMap[mapWidth][mapHeight] =
 									{
@@ -320,6 +323,12 @@ void	calc(t_info *info)
 		else          perpWallDist = (mapY - info->posY + (1 - stepY) / 2) / rayDirY;
 		//Calculate height of line to draw on screen
 		int lineHeight = (int)(height / perpWallDist);
+		if (x == 100)
+		{
+			printf("perpWallDist = %f\n", perpWallDist);
+			printf("mapX, posX = (%d, %f)\n", mapX, info->posX);
+			printf("rayDirX = %f\n", rayDirX);
+		}
 		//calculate lowest and highest pixel to fill in current stripe
 		int drawStart = -lineHeight / 2 + height / 2;
 		if(drawStart < 0) drawStart = 0;
@@ -543,6 +552,8 @@ int	main(void)
 	t_info info;
 	info.mlx = mlx_init();
 
+//	info.posX = 1.1;
+//	info.posY = 1.1;
 	info.posX = 22.0;
 	info.posY = 11.5;
 	info.dirX = -1.0;
